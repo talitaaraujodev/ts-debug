@@ -4,8 +4,8 @@
   "main": "App.ts",
   "scripts": {
     "build": "tsc",
-    "start:dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/app.ts",
-    "start:debug": "ts-node-dev  --inspect --transpile-only  --ignore-watch node_modules src/app.ts"
+    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/app.ts",
+    "debug": "tsnd --files --transpile-only --respawn --ignore-watch node_modules --inspect=4321 --project tsconfig.json src/app.ts"
   },
   "keywords": [],
   "author": "",
